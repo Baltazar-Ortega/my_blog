@@ -1,0 +1,81 @@
+$main-color: #c44741;
+$padding-container: 0 20rem;
+
+.aboutMeContainer {
+  min-height: 100vh;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: $padding-container;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.aboutMeTitle {
+  font-size: 2em;
+  color: $main-color;
+  font-weight: bold;
+  width: 100%;
+}
+
+.photo {
+  margin-top: 50px;
+  margin-bottom: 12px;
+  width: 220px;
+  border-radius: 5px;
+}
+
+.contactTitle {
+  margin-bottom: 0px;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.contactElement {
+  color: $main-color;
+  margin-top: 7px;
+  font-size: 20px;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .aboutMeContainer {
+    padding: 0 11rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .aboutMeContainer {
+    padding: 0 8rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .aboutMeContainer {
+    padding: 0 5rem;
+  }
+
+  .photo {
+    width: 150px;
+  }
+
+  .contactTitle {
+    font-size: 20px;
+  }
+
+  .contactElement {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .aboutMeContainer {
+    padding: 0 1rem;
+  }
+}

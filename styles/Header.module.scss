@@ -1,0 +1,100 @@
+$main-color: #c44741;
+$padding-container: 0 20rem;
+
+.headerContainer {
+  width: 100%;
+  background-color: #f8f1e3;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding-container;
+  width: 100%;
+  height: 80px;
+}
+
+.logo {
+  font-size: 27px;
+  color: $main-color;
+  font-weight: bolder;
+}
+
+.blogName {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.aboutMe {
+  font-size: 1em;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .header {
+    padding: 0 15rem;
+  }
+
+  .blogName {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .header {
+    padding: 0 13rem;
+  }
+
+  .blogName {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    padding: 0 10rem;
+  }
+
+  .blogName {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    padding: 0 7rem;
+  }
+
+  .blogName {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 0 3rem;
+  }
+
+  .blogName {
+    font-size: 1.3em;
+  }
+
+  .aboutMe {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .header {
+    padding: 0 2rem;
+  }
+
+  .blogName {
+    font-size: 1.2em;
+  }
+}

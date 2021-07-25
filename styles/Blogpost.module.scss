@@ -1,0 +1,62 @@
+$main-color: #c44741;
+$padding-container: 0 20rem;
+
+.blogpostContainer {
+  min-height: 100vh;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: $padding-container;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.blogpostTitle {
+  font-size: 2em;
+  color: $main-color;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.loadComments {
+  text-align: left;
+  align-self: self-start;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 1220px) {
+  .blogpostContainer {
+    padding: 0 17rem;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .blogpostContainer {
+    padding: 0 15rem;
+  }
+  .blogpostTitle {
+    font-size: 1.7em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .blogpostContainer {
+    padding: 0 7rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .blogpostContainer {
+    padding: 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .blogpostContainer {
+    padding: 0 1rem;
+  }
+}
