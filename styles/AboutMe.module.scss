@@ -19,7 +19,7 @@ $padding-container: 0 20rem;
   width: 100%;
 }
 
-.photo {
+.photoContainer {
   margin-top: 50px;
   margin-bottom: 12px;
   width: 220px;
@@ -60,8 +60,9 @@ $padding-container: 0 20rem;
     padding: 0 5rem;
   }
 
-  .photo {
+  .photoContainer {
     width: 150px;
+    margin-bottom: 5px;
   }
 
   .contactTitle {
