@@ -6,16 +6,17 @@ $padding-container: 0 20rem;
 }
 
 .postsContainer {
-  min-height: 100vh;
-  margin-top: 20px;
-  padding: $padding-container;
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-top: 20px;
+  padding: $padding-container;
 }
 
 .postsUl {
+  flex: 1;
   margin-top: 0px;
   list-style: none;
   padding-left: 0;

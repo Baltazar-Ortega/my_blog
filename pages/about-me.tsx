@@ -10,12 +10,25 @@ const aboutMe = () => {
       <div className={styles.aboutMeContainer}>
         <h1 className={styles.aboutMeTitle}>About me</h1>
         <div className={styles.photoContainer}>
-          <Image src="/me.jpg" alt="me" width="220" height="200" />
+          <Image
+            src="/me.jpg"
+            alt="me"
+            width="220"
+            height="200"
+            className={styles.photo}
+          />
         </div>
         <p>
-          Hello! <br />
-          I am a CS student currently learning everything about Machine Learning
-          and Deep learning. <br />
+          Hello! <br />I am a Computer Science student at{" "}
+          <a
+            href="https://uanl.mx"
+            target="_blank"
+            style={{ textDecoration: "underline" }}
+          >
+            UANL
+          </a>{" "}
+          currently learning everything about Machine Learning and Deep
+          learning. <br />
           I hope you find something useful in my blogposts. <br />
           <br />
           Greetings from México &#127474;&#127485;
@@ -24,13 +37,7 @@ const aboutMe = () => {
         <p className={styles.contactTitle}>Contact</p>
         <ul>
           <li className={styles.contactElement}>
-            <a
-              href="https://github.com/Baltazar-Ortega"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Github
-            </a>
+            <a>baltazargtzortega@gmail.com</a>
           </li>
           <li className={styles.contactElement}>
             <a
@@ -39,6 +46,15 @@ const aboutMe = () => {
               rel="noreferrer"
             >
               LinkedIn
+            </a>
+          </li>
+          <li className={styles.contactElement}>
+            <a
+              href="https://github.com/Baltazar-Ortega"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
             </a>
           </li>
         </ul>
