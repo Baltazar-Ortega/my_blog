@@ -23,6 +23,7 @@ const aboutMe = () => {
           <a
             href="https://uanl.mx"
             target="_blank"
+            rel="noreferrer"
             style={{ textDecoration: "underline" }}
           >
             UANL
@@ -37,7 +38,7 @@ const aboutMe = () => {
         <p className={styles.contactTitle}>Contact</p>
         <ul>
           <li className={styles.contactElement}>
-            <a>baltazargtzortega@gmail.com</a>
+            <a rel="noreferrer">baltazargtzortega@gmail.com</a>
           </li>
           <li className={styles.contactElement}>
             <a
