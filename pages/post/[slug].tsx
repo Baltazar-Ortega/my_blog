@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Header from "../../components/Header";
 import Blogpost from "../../components/Blogpost";
+import Footer from "../../components/Footer";
 
 const prism = require("prismjs");
 require("prismjs/components/prism-python");

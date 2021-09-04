@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Header from "../components/Header";
 import styles from "../styles/AboutMe.module.scss";
+import Footer from "../components/Footer";
 
 const aboutMe = () => {
   return (
