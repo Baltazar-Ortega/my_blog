@@ -39,7 +39,7 @@ const PostsList = (props) => {
                     {post.reading_time} minutos de lectura
                   </p>
                 )}
-                <p>{post.excerpt}</p>
+                <p>{post.custom_excerpt}</p>
               </div>
             </li>
           );

@@ -5,7 +5,7 @@ const { BLOG_URL, CONTENT_API_KEY } = process.env;
 
 async function getPosts() {
   const res = await fetch(
-    `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&fields=excerpt,title,slug,published_at,reading_time&formats=html,plaintext&filter=tag:hash-es`
+    `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&fields=custom_excerpt,excerpt,title,slug,published_at,reading_time&formats=html,plaintext&filter=tag:hash-es`
   ).then((res) => res.json());
 
   const posts = res.posts;
