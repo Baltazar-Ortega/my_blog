@@ -6,7 +6,10 @@ const Blogpost = ({ post }) => {
   return (
     <div className={styles.blogpostContainer}>
       <h1 className={styles.blogpostTitle}>{post.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+      <div
+        dangerouslySetInnerHTML={{ __html: post.html }}
+        className={styles.innerHtml}
+      ></div>
       <Footer />
     </div>
   );

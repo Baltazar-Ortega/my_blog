@@ -20,6 +20,21 @@ $padding-container: 0 20rem;
   text-align: center;
 }
 
+.innerHtml a {
+  color: $main-color;
+  text-decoration: underline;
+}
+
+.innerHtml h3 {
+  color: $main-color;
+  font-size: 1.45rem;
+}
+
+.innerHtml h4 {
+  color: #585123;
+  font-size: 1.35rem;
+}
+
 .loadComments {
   text-align: left;
   align-self: self-start;
