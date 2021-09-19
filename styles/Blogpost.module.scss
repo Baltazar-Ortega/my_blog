@@ -35,6 +35,15 @@ $padding-container: 0 20rem;
   font-size: 1.35rem;
 }
 
+.innerHtml blockquote {
+  margin: 0;
+  background-color: #fd971f47;
+  padding-left: 17px;
+  padding-right: 10px;
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
+}
+
 .loadComments {
   text-align: left;
   align-self: self-start;
