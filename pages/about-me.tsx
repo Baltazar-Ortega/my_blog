@@ -61,6 +61,8 @@ const aboutMe = () => {
           </li>
         </ul>
       </div>
+
+      <Footer isBlogpost={false}></Footer>
     </div>
   );
 };

@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../styles/PostsList.module.scss";
 import Link from "next/link";
-import Footer from "./Footer";
 
 const PostsList = (props) => {
   return (
@@ -45,8 +44,6 @@ const PostsList = (props) => {
           );
         })}
       </ul>
-
-      <Footer></Footer>
     </div>
   );
 };

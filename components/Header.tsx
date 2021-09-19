@@ -7,14 +7,18 @@ const Header = () => {
     <div className={styles.headerContainer}>
       <div className={styles.header}>
         <Link href="/">
-          <h1 className={styles.blogName}>
-            {" "}
-            <span className={styles.logo}> {">"} </span> baltazar ortega
-          </h1>
+          <a className="linkHeader">
+            <h1 className={styles.blogName}>
+              {" "}
+              <span className={styles.logo}> {">"} </span> baltazar ortega
+            </h1>
+          </a>
         </Link>
         <div>
           <Link href="/about-me">
-            <p className={styles.aboutMe}>About me</p>
+            <a className="linkHeader">
+              <p className={styles.aboutMe}>About me</p>
+            </a>
           </Link>
         </div>
       </div>

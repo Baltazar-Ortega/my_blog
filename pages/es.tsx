@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import PostsList from "../components/PostsList";
 
@@ -28,6 +29,7 @@ const SpanishHome: React.FC<{ posts: Post[] }> = (props) => {
     <div>
       <Header></Header>
       <PostsList posts={posts} es={true}></PostsList>
+      <Footer isBlogpost={false}></Footer>
     </div>
   );
 };

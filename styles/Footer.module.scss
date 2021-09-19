@@ -1,0 +1,60 @@
+$padding-container: 0 20rem;
+
+.footerContainer {
+  width: 100%;
+  height: 70px;
+}
+
+.footerTag {
+  padding: $padding-container;
+}
+
+.footerTagBlogpost {
+  padding: $padding-container;
+}
+
+@media only screen and (max-width: 1220px) {
+  .footerTagBlogpost {
+    padding: 0 17rem;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .footerTag {
+    padding: 0 11rem;
+  }
+
+  .footerTagBlogpost {
+    padding: 0 15rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .footerTag {
+    padding: 0 8rem;
+  }
+
+  .footerTagBlogpost {
+    padding: 0 7rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .footerTag {
+    padding: 0 5rem;
+  }
+
+  .footerTagBlogpost {
+    padding: 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footerTag {
+    padding: 0 1rem;
+  }
+
+  .footerTagBlogpost {
+    padding: 0 1rem;
+  }
+}

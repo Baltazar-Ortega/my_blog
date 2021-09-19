@@ -40,9 +40,11 @@ const Post: React.FC<{ post: Post }> = (props) => {
   }
 
   function setATags() {
-    let a_tags = document.querySelectorAll("a");
-    for (let i = 0; i < a_tags.length; i++) {
-      a_tags[i].setAttribute("target", "_blank");
+    let aTags = document.querySelectorAll("a");
+    for (let i = 0; i < aTags.length; i++) {
+      if (aTags[i].className === "") {
+        aTags[i].setAttribute("target", "_blank");
+      }
     }
   }
 
@@ -50,6 +52,7 @@ const Post: React.FC<{ post: Post }> = (props) => {
     <div>
       <Header></Header>
       <Blogpost post={post}></Blogpost>
+      <Footer isBlogpost={true} />
     </div>
   );
 };

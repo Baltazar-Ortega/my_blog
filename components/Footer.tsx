@@ -1,15 +1,17 @@
 import React from "react";
+import styles from "../styles/Footer.module.scss";
 
-function Footer() {
+function Footer(props) {
   return (
-    <footer
-      style={{
-        width: "100%",
-        height: "70px",
-      }}
-    >
-      <hr />
-      <p> © 2021 Baltazar Ortega. All rights reserved.</p>
+    <footer className={styles.footerContainer}>
+      <div
+        className={
+          props.isBlogpost ? styles.footerTagBlogpost : styles.footerTag
+        }
+      >
+        <hr />
+        <p> © 2021 Baltazar Ortega. All rights reserved.</p>
+      </div>
     </footer>
   );
 }
