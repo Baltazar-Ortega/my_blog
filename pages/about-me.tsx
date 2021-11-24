@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Head from "next/head";
 import Header from "../components/Header";
 import styles from "../styles/AboutMe.module.scss";
 import Footer from "../components/Footer";
@@ -7,6 +8,9 @@ import Footer from "../components/Footer";
 const aboutMe = () => {
   return (
     <div>
+      <Head>
+        <title>About me</title>
+      </Head>
       <Header></Header>
       <div className={styles.aboutMeContainer}>
         <h1 className={styles.aboutMeTitle}>About me</h1>

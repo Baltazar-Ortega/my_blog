@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import Head from "next/head";
 import Header from "../../components/Header";
 import Blogpost from "../../components/Blogpost";
 import Footer from "../../components/Footer";
@@ -50,6 +51,9 @@ const Post: React.FC<{ post: Post }> = (props) => {
 
   return (
     <div>
+      <Head>
+        <title>{post.title}</title>
+      </Head>
       <Header></Header>
       <Blogpost post={post}></Blogpost>
       <Footer isBlogpost={true} />
