@@ -10,7 +10,7 @@ function Footer(props) {
         }
       >
         <hr />
-        <p> © 2021. Baltazar Ortega. All rights reserved.</p>
+        <p> © 2022. Baltazar Ortega. All rights reserved.</p>
       </div>
     </footer>
   );

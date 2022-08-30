@@ -24,17 +24,8 @@ const aboutMe = () => {
           />
         </div>
         <p>
-          Hello! <br />I am a Computer Science student at{" "}
-          <a
-            href="https://uanl.mx"
-            target="_blank"
-            rel="noreferrer"
-            style={{ textDecoration: "underline" }}
-          >
-            UANL
-          </a>{" "}
-          currently learning everything about Machine Learning and Deep
-          learning. <br />
+          Hello! <br />I am a Fullstack Engineer
+          currently learning more about React and Javascript. <br />
           I hope you find something useful in my blogposts. <br />
           <br />
           Greetings from México &#127474;&#127485;
