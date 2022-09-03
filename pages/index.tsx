@@ -23,6 +23,7 @@ type Post = {
   reading_time: number;
 };
 
+// Component
 const Home: React.FC<{ posts: Post[] }> = (props) => {
   const { posts } = props;
 
@@ -42,7 +43,6 @@ export const getStaticProps = async ({ params }) => {
   const posts = await getPosts();
   return {
     props: { posts },
-    revalidate: 10,
   };
 };
 

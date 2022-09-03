@@ -16,7 +16,6 @@ async function getPost(slug: string) {
   ).then((res) => res.json());
 
   const post = res.posts[0];
-
   return post;
 }
 
@@ -35,7 +34,6 @@ const Post: React.FC<{ post: Post }> = (props) => {
   }, []);
 
   const router = useRouter();
-
   if (router.isFallback) {
     return <h1>Loading...</h1>;
   }
@@ -65,7 +63,6 @@ export const getStaticProps = async ({ params }) => {
   const post = await getPost(params.slug);
   return {
     props: { post },
-    revalidate: 10,
   };
 };
 

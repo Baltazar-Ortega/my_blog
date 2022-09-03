@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Head from "next/head";
-import Header from "../components/Header";
 import styles from "../styles/AboutMe.module.scss";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const aboutMe = () => {

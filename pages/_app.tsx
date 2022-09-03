@@ -12,6 +12,7 @@ function MyApp({ Component, pageProps }) {
     const handleRouteChange = (url) => {
       ga.pageview(url);
     };
+    
     //When the component is mounted, subscribe to router changes
     //and log those page views
     router.events.on("routeChangeComplete", handleRouteChange);
